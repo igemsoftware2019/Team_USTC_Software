@@ -1,0 +1,21 @@
+# Python Cache
+__pycache__/
+*.pyc
+
+# Development Database
+*.sqlite3
+
+# Editors & IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.env
+env/
+venv/
+
+# production config
+backend/backend/config.py

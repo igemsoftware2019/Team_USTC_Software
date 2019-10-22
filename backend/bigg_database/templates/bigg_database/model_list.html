@@ -1,0 +1,17 @@
+<table class="table table-hover table-bordered mt-3">
+    <thead>
+    <tr>
+        <th>BiGG ID</th>
+        <th>Compartments</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for model in list %}
+    <tr>
+        <th><a href="{{ model.detail_url }}">{{ model.bigg_id }}</a></th>
+        <th>{{ model.compartments|join:', ' }}</th>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+

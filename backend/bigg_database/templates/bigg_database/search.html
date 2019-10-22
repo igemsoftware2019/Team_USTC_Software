@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h2>Search</h2>
+
+        <form method="get" action="{% url 'bigg_database:search' %}">
+            <p>
+                <label for="id_q">Search:</label>
+                <input id="id_q" type="search" name="q" required>
+            </p>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+{% endblock %}
